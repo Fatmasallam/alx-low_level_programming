@@ -28,7 +28,7 @@ if (n < 0)
  */
 int act_sqrt_recursion(int n, int it)
 {
-if (i * it > n)
+if (it * it > n)
 {
 	return (-1);
 }
