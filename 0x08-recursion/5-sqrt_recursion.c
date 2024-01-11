@@ -34,7 +34,7 @@ if (i * it > n)
 }
 if (it * it == n)
 {
-	return (i);
+	return (it);
 }
 
 return (act_sqrt_recursion(n, it + 1));
