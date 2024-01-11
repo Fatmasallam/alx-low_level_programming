@@ -43,7 +43,7 @@ if (*s == '\0')
  *
  * Return:1 if right
  */
-int check_pal(char *s, int in, int l)
+int _pal(char *s, int in, int l)
 {
 if (*(s + in) != *(s + l - 1))
 {
@@ -54,6 +54,6 @@ if (in >= l)
 	return (1);
 }
 
-	return (check_pal(s, in + 1, l - 1));
+	return (_pal(s, in + 1, l - 1));
 }
 

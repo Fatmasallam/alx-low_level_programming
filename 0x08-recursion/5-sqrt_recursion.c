@@ -14,7 +14,7 @@ if (n < 0)
 	return (-1);
 }
 
-	return (actual_sqrt_recursion(n, 0));
+	return (act_sqrt_recursion(n, 0));
 
 }
 

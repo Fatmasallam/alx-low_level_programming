@@ -14,7 +14,7 @@ if (n <= 1)
 {
 	return (0);
 }
-	return (actual_prime(n, n - 1));
+	return (_prime(n, n - 1));
 
 }
 
@@ -35,6 +35,6 @@ if (n % it == 0 && it > 0)
 {
 	return (0);
 }
-	return (actual_prime(n, i - 1));
+	return (_prime(n, i - 1));
 
 }
