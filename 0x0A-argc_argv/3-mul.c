@@ -29,17 +29,12 @@ int _atoi(char *s)
 	while (ite < length && fo == 0)
 	{
 		if (s[ite] == '-')
-	{
-
 			++dn;
-	}
 		if (s[ite] >= '0' && s[ite] <= '9')
 		{
 			digit = s[ite] - '0';
 			if (dn % 2)
-			{
 				digits = -digits;
-			}
 			no = no * 10 + digits;
 			fo = 1;
 			if (s[ite + 1] < '0' || s[ite + 1] > '9')
@@ -54,7 +49,7 @@ int _atoi(char *s)
 	{
 		return (0);
 	}
-	return (n);
+	return (no);
 }
 /**
  * main - multiply
@@ -63,12 +58,11 @@ int _atoi(char *s)
  *fatmasallam
  * Return: 0 (Success), 1 (Error)
  */
-
 int main(int argc, char *argv[])
-		
+
 {
 	int resulting, number1, number2;
-		
+
 	if (argc < 3 || argc > 3)
 
 	{
@@ -78,20 +72,16 @@ int main(int argc, char *argv[])
 		return (1);
 
 	}
-		
 
-		
+
 	number1 = _atoi(argv[1]);
-		
-	number2 = _atoi(argv[2]);
-		
-	resulting = number1 * number2;
-		
 
-		
+	number2 = _atoi(argv[2]);
+
+	resulting = number1 * number2;
+
+
 	printf("%d\n", resulting);
 
-
 	return (0);
-		
 }
