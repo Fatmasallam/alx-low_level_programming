@@ -1,22 +1,20 @@
 #include <stdio.h>
 
 #include "main.h"
-
 /**
- * main -to print
- * fatmasallam
- * @argc: num
+ * main - print
+ * @argc: n
  * @argv: array
- * Return: 0
+ *fatmasallam
+ * Return:0
  */
 
 int main(int argc, char *argv[])
 
 {
-	(void)argc;
 
-	printf("%s\n", *argv[0]);
-
+	(void) argv;
+	printf("%d\n", argc - 1);
+/*fatmasallam*/
 	return (0);
-
 }
