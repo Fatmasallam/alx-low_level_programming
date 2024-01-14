@@ -32,7 +32,7 @@ int _atoi(char *s)
 			++dn;
 		if (s[ite] >= '0' && s[ite] <= '9')
 		{
-			digit = s[ite] - '0';
+			digits = s[ite] - '0';
 			if (dn % 2)
 				digits = -digits;
 			no = no * 10 + digits;

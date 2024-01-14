@@ -43,7 +43,7 @@ int main(int argc, char *argv[])
 
 	while (counting < argc)
 	{
-		if (check_num(argv[count]))
+		if (check_num(argv[counting]))
 
 		{
 			s_to_integ = atoi(argv[counting]);
